@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thansi Al Kasim | Full-Stack Software Engineer</title>
+    <!-- Tailwind CSS for rapid, clean component styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for sleek tech iconography -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for modern tech branding -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+        }
+
+        h1,
+        h2,
+        h3,
+        .tech-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .glow-red {
+            box-shadow: 0 0 20px rgba(255, 51, 51, 0.15);
+        }
+
+        .glow-red-hover:hover {
+            box-shadow: 0 0 35px rgba(255, 51, 51, 0.35);
+            border-color: #ff3333;
+        }
+
+        .text-glow {
+            text-shadow: 0 0 12px rgba(255, 51, 51, 0.5);
+        }
+
+        /* Slider mechanics styling */
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #222;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff3333;
+        }
+    </style>
+</head>
+
+<body class="text-gray-300 overflow-x-hidden">
+
+    <!-- Ambient Digital Network Grid Background Overlay -->
+    <div
+        class="fixed inset-0 bg-[linear-gradient(to_right,#141414_1px,transparent_1px),linear-gradient(to_bottom,#141414_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none z-0">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-[#050505]/80 backdrop-blur-md border-b border-neutral-900 z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-bold text-xl tracking-wider tech-font">
+                THANSI<span class="text-red-500"></span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+                <a href="#about" class="hover:text-red-500 transition">About</a>
+                <a href="#skills" class="hover:text-red-500 transition">Skills</a>
+                <a href="#projects" class="hover:text-red-500 transition">Projects</a>
+                <a href="#experience" class="hover:text-red-500 transition">Experience</a>
+            </div>
+            <!-- <a href="mailto:thansialkasim101@gmail.com"
+                class="border border-red-500/50 text-red-500 px-4 py-2 rounded text-sm hover:bg-red-500 hover:text-white transition duration-300 tech-font glow-red">
+                Contact
+            </a> -->
+        </div>
+    </nav>
+
+    <!-- Hero Section with Compact Round Profile Layout -->
+    <section id="about" class="relative min-h-screen flex items-center justify-center pt-24 z-10 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+            <!-- Left Side: Profile Information Text Layout -->
+            <div class="lg:col-span-8 space-y-6 order-2 lg:order-1">
+                <div
+                    class="inline-flex items-center space-x-2 bg-red-500/10 border border-red-500/30 px-4 py-1.5 rounded-full text-xs text-red-400 font-mono tracking-wider shadow-[0_0_10px_rgba(255,51,51,0.2)]">
+                    <span
+                        class="w-2 h-2 rounded-full bg-red-500 animate-pulse shadow-[0_0_8px_rgba(255,51,51,0.8)]"></span>
+                    <span>DUBAI, UAE | 7 YEARS OF PROFESSIONAL EXPERIENCE</span>
+                </div>
+                <h1
+                    class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight tech-font">
+                    Thansi Al Kasim <br>
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-600 text-glow">Full-Stack
+                        Software Engineer</span>
+                </h1>
+                <p class="text-gray-400 text-base md:text-lg max-w-2xl leading-relaxed">
+                    Designing, developing, and maintaining enterprise web applications, SaaS solutions, and AI-powered
+                    business systems using <span class="text-white font-semibold tech-font tracking-wide">Angular,
+                        ASP.NET Core, C#, SQL Server,
+                        PHP (Laravel), and WordPress</span>.
+                </p>
+                <!-- Quick Contact Info Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 text-sm font-mono text-gray-400">
+                    <a href="mailto:thansialkasim101@gmail.com"
+                        class="flex items-center hover:text-red-400 transition-colors cursor-pointer"><i
+                            class="fas fa-envelope text-red-500 w-6"></i> thansialkasim101@gmail.com</a>
+                    <a href="https://wa.me/971545736467" target="_blank"
+                        class="flex items-center hover:text-red-400 transition-colors cursor-pointer"><svg
+                            class="w-5 h-5 text-red-500 fill-current mr-2" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                        </svg> +971 545736467</a>
+                    <a href="https://www.linkedin.com/in/thansi-al-kasim-45a945" target="_blank"
+                        class="flex items-center hover:text-red-400 transition-colors cursor-pointer"><i
+                            class="fa-brands fa-linkedin text-red-500 w-6"></i> linkedin.com/in/thansi-al-kasim</a>
+                    <a href="https://thansialkasim101.github.io" target="_blank"
+                        class="flex items-center hover:text-red-400 transition-colors cursor-pointer"><i
+                            class="fas fa-globe text-red-500 w-6"></i> thansialkasim101.github.io</a>
+                </div>
+                <!-- Action Elements -->
+                <div class="flex flex-wrap gap-4 pt-6">
+                    <a href="#projects"
+                        class="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-semibold px-8 py-3 rounded shadow-[0_0_15px_rgba(255,51,51,0.4)] transition-all duration-300 tech-font transform hover:-translate-y-1 tracking-wide">
+                        Initialize Projects
+                    </a>
+                    <a href="https://thansialkasim101.github.io/" target="_blank"
+                        class="bg-neutral-900/80 backdrop-blur-sm hover:bg-neutral-800 border border-neutral-700 hover:border-red-500/50 text-white font-semibold px-8 py-3 rounded transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-1 group">
+                        <i class="fa-brands fa-github text-red-500 group-hover:text-red-400"></i> Code Environment
+                    </a>
+                    <a href="resume.pdf" target="_blank"
+                        class="bg-transparent border border-red-500/50 hover:bg-red-500/10 text-red-400 font-semibold px-8 py-3 rounded transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-1 group tech-font">
+                        <i class="fas fa-download group-hover:animate-bounce"></i> Download CV
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Circular Compact Profile Image & AI HUD Aura Framework -->
+            <div class="lg:col-span-4 flex justify-center items-center order-1 lg:order-2 relative">
+                <!-- Glowing ambient background behind profile -->
+                <div class="absolute inset-0 bg-red-500/20 blur-3xl rounded-full animate-pulse"></div>
+
+                <div
+                    class="relative w-56 h-56 md:w-72 md:h-72 rounded-full p-1.5 bg-gradient-to-br from-red-500 via-neutral-900 to-red-600 shadow-[0_0_40px_rgba(255,51,51,0.3)] group hover:shadow-[0_0_60px_rgba(255,51,51,0.5)] transition-shadow duration-700">
+                    <div class="w-full h-full rounded-full overflow-hidden bg-neutral-950 relative">
+                        <!-- Replace src with your updated photo file asset -->
+                        <img id="profile-img" src="profile.jpg" alt="Thansi Al Kasim"
+                            class="w-full h-full object-cover grayscale contrast-125 mix-blend-luminosity group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                        <!-- Precision UI Grid Mask Overlay Lines -->
+                        <div
+                            class="absolute inset-0 border-[3px] border-red-500/30 rounded-full pointer-events-none scale-[0.96] group-hover:scale-100 transition-transform duration-700">
+                        </div>
+                    </div>
+                    <!-- Absolute Outer AI Processing Node Indicator Grid -->
+                    <!-- <div
+                        class="absolute -top-2 -right-2 bg-red-600 text-white font-mono text-[10px] px-3 py-1 uppercase tracking-widest font-bold rounded-full shadow-[0_0_15px_rgba(255,51,51,0.8)] animate-bounce">
+                        AI_CORE</div> -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technical Matrix Section Map -->
+    <section id="skills" class="py-24 bg-[#090909] border-y border-neutral-900 relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-wide tech-font uppercase">Core
+                    Architecture Competence</h2>
+                <div
+                    class="h-1 w-24 bg-gradient-to-r from-red-600 to-red-400 mx-auto rounded shadow-[0_0_10px_rgba(255,51,51,0.6)]">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+                <div
+                    class="bg-neutral-950 p-6 rounded-xl border border-neutral-900 hover:border-red-500/50 hover:bg-[#0c0c0c] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(255,51,51,0.15)] group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-red-500/5 rounded-full blur-2xl group-hover:bg-red-500/10 transition-colors">
+                    </div>
+                    <div
+                        class="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">Languages & UI</h3>
+                    <ul class="space-y-3 font-mono text-xs text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            C# / ASP.NET Core / PHP</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            Angular (v16+) & TypeScript</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            HTML5, CSS3, Bootstrap</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            JavaScript (ES6+), jQuery</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-neutral-950 p-6 rounded-xl border border-neutral-900 hover:border-red-500/50 hover:bg-[#0c0c0c] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(255,51,51,0.15)] group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-red-500/5 rounded-full blur-2xl group-hover:bg-red-500/10 transition-colors">
+                    </div>
+                    <div
+                        class="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">Backend Architecture</h3>
+                    <ul class="space-y-3 font-mono text-xs text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            RESTful API & Clean Architecture</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            SOLID Principles & OOP</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            Dependency Injection & LINQ</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            JWT Auth & Role-Based Access</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-neutral-950 p-6 rounded-xl border border-neutral-900 hover:border-red-500/50 hover:bg-[#0c0c0c] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(255,51,51,0.15)] group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-red-500/5 rounded-full blur-2xl group-hover:bg-red-500/10 transition-colors">
+                    </div>
+                    <div
+                        class="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">AI & Workflow</h3>
+                    <ul class="space-y-3 font-mono text-xs text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            Ollama Local LLMs</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            OpenAI API Integrations</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            AI-Powered Chatbots</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            AI Workflow Automation</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-neutral-950 p-6 rounded-xl border border-neutral-900 hover:border-red-500/50 hover:bg-[#0c0c0c] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(255,51,51,0.15)] group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-red-500/5 rounded-full blur-2xl group-hover:bg-red-500/10 transition-colors">
+                    </div>
+                    <div
+                        class="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">Databases & Real-Time</h3>
+                    <ul class="space-y-3 font-mono text-xs text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            Microsoft SQL Server</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            MySQL Optimization</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            SignalR & WebSockets</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            Firebase (FCM) Push Notifs</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-neutral-950 p-6 rounded-xl border border-neutral-900 hover:border-red-500/50 hover:bg-[#0c0c0c] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(255,51,51,0.15)] group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-red-500/5 rounded-full blur-2xl group-hover:bg-red-500/10 transition-colors">
+                    </div>
+                    <div
+                        class="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">API & Integrations</h3>
+                    <ul class="space-y-3 font-mono text-xs text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            Swagger / OpenAPI</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            Google Maps & Leaflet API</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            Digital Signatures / QR Code</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            CMS / WordPress Integrations</li>
+                    </ul>
+                </div>
+
+                <div
+                    class="bg-neutral-950 p-6 rounded-xl border border-neutral-900 hover:border-red-500/50 hover:bg-[#0c0c0c] transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(255,51,51,0.15)] group relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-red-500/5 rounded-full blur-2xl group-hover:bg-red-500/10 transition-colors">
+                    </div>
+                    <div
+                        class="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-white font-bold mb-4 text-lg tech-font tracking-wide">DevOps & Deployment</h3>
+                    <ul class="space-y-3 font-mono text-xs text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            Docker, Git, SVN</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            CI/CD Concepts</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            IIS Deployment & cPanel</li>
+                        <li class="flex items-center"><i class="fas fa-angle-right text-red-500 mr-2 text-[10px]"></i>
+                            App Performance Tuning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Carousel Slider System -->
+    <section id="projects" class="py-24 relative z-10 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-white uppercase tracking-wider">Enterprise Deployments Slider
+                    </h2>
+                    <p class="text-sm text-gray-400 mt-1">Reviewing production architecture matrices and integrated
+                        modules.</p>
+                </div>
+                <!-- Navigation Control Buttons -->
+                <div class="flex space-x-3 mt-4 sm:mt-0">
+                    <button id="prevBtn"
+                        class="w-10 h-10 rounded bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white flex items-center justify-center transition hover:text-red-500">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="nextBtn"
+                        class="w-10 h-10 rounded bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 text-white flex items-center justify-center transition hover:text-red-500">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Outer Slider Track Shield wrapper -->
+            <div class="overflow-hidden">
+                <div id="projectSlider" class="slider-container gap-6">
+
+                    <!-- Card 1: CRM -->
+                    <div
+                        class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-neutral-950 rounded-xl overflow-hidden border border-neutral-900 glow-red-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80"
+                                alt="CRM Layout" class="w-full h-40 object-cover opacity-70">
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Customer Relationship Management (CRM)
+                                </h3>
+                                <p class="text-xs text-gray-400 leading-relaxed">Centralized pipeline platform tracking
+                                    sales leads, complex analytics dashboards, operational automation, and modular RBAC
+                                    integration models.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5"><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">RBAC
+                                Security</span><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">Dashboards</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: EMS -->
+                    <div
+                        class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-neutral-950 rounded-xl overflow-hidden border border-neutral-900 glow-red-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80"
+                                alt="EMS Layout" class="w-full h-40 object-cover opacity-70">
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Engineering Management System (EMS)</h3>
+                                <p class="text-xs text-gray-400 leading-relaxed">Managing intricate pipeline components,
+                                    digital verification signature protocols, task hierarchies, and custom automated
+                                    operational notification streams.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5"><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">Digital
+                                Signatures</span><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">Automations</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: MEP Inspection -->
+                    <div
+                        class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-neutral-950 rounded-xl overflow-hidden border border-neutral-900 glow-red-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80"
+                                alt="MEP Layout" class="w-full h-40 object-cover opacity-70">
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Material Inspection & MEP Workflow</h3>
+                                <p class="text-xs text-gray-400 leading-relaxed">A specialized enterprise QA/QC engine
+                                    handling verification workflows, real-time tracking dashboards, automated PDF
+                                    exports, and database filing arrays.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5"><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">QA/QC
+                                Portal</span><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">PDF
+                                Logic</span></div>
+                    </div>
+
+                    <!-- Card 4: Sales Forecast -->
+                    <div
+                        class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-neutral-950 rounded-xl overflow-hidden border border-neutral-900 glow-red-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80"
+                                alt="Forecast Layout" class="w-full h-40 object-cover opacity-70">
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Sales & Collection Forecast System</h3>
+                                <p class="text-xs text-gray-400 leading-relaxed">Executive intelligence platforms
+                                    calculating financial matrices, compiling analytics dashboards, and predicting
+                                    performance metrics safely.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5"><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">KPI
+                                Systems</span><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">Data
+                                Matrices</span></div>
+                    </div>
+
+                    <!-- Card 5: Facility Management -->
+                    <div
+                        class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-neutral-950 rounded-xl overflow-hidden border border-neutral-900 glow-red-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=500&q=80"
+                                alt="FMS" class="w-full h-40 object-cover opacity-70">
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Facility Management System (FMS)</h3>
+                                <p class="text-xs text-gray-400 leading-relaxed">Centralized engine organizing
+                                    operations tracking, lease ledgers, tenant databases, and transactional payment
+                                    monitoring configurations.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5"><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">Lease
+                                Engines</span><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">FMS
+                                Nodes</span></div>
+                    </div>
+
+                    <!-- Card 6: Healthcare Portal -->
+                    <div
+                        class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-neutral-950 rounded-xl overflow-hidden border border-neutral-900 glow-red-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=500&q=80"
+                                alt="Healthcare" class="w-full h-40 object-cover opacity-70">
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Healthcare Management Solutions</h3>
+                                <p class="text-xs text-gray-400 leading-relaxed">Patient tracking infrastructure
+                                    containing dynamic appointment scheduling algorithms, lab results indexing, and
+                                    medical summary logs.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5"><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">Patient
+                                Nodes</span><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">Secure
+                                Core</span></div>
+                    </div>
+
+                    <!-- Card 7: GPS Fleet Tracking -->
+                    <div
+                        class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-neutral-950 rounded-xl overflow-hidden border border-neutral-900 glow-red-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=500&q=80"
+                                alt="Fleet tracking" class="w-full h-40 object-cover opacity-70">
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">Vehicle Tracking & Fleet Management</h3>
+                                <p class="text-xs text-gray-400 leading-relaxed">Integrated real-time streaming
+                                    framework utilizing Google Maps and Leaflet APIs for live geolocation maps and trip
+                                    history logging.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5"><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">Google
+                                Maps</span><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">Leaflet
+                                API</span></div>
+                    </div>
+
+                    <!-- Card 8: LMS Portal -->
+                    <div
+                        class="min-w-[100%] sm:min-w-[48%] lg:min-w-[31.5%] bg-neutral-950 rounded-xl overflow-hidden border border-neutral-900 glow-red-hover transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80"
+                                alt="E-learning" class="w-full h-40 object-cover opacity-70">
+                            <div class="p-5">
+                                <h3 class="text-lg font-bold text-white mb-2">E-Learning & Training Systems</h3>
+                                <p class="text-xs text-gray-400 leading-relaxed">Interactive learning platforms
+                                    structuring course tracks, dynamically scheduled testing engines, and digital
+                                    certification processors.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex flex-wrap gap-1.5"><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">LMS
+                                Engine</span><span
+                                class="bg-neutral-900 text-red-500 text-[10px] px-2 py-0.5 rounded font-mono">Certificates</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Career Roadmap Timeline -->
+    <section id="experience" class="py-24 bg-[#090909] border-t border-neutral-900 relative z-10 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white text-center mb-16 uppercase tracking-wider">Complete Experience
+                Roadmap</h2>
+
+            <div
+                class="space-y-12 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-neutral-800">
+
+                <!-- Role 1: NAFFCO -->
+                <div class="relative flex flex-col md:flex-row items-start md:justify-between group">
+                    <div
+                        class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-red-600 -translate-x-1.5 border-4 border-[#090909] z-10 group-hover:bg-red-500 transition">
+                    </div>
+                    <div class="w-full md:w-[45%] pl-12 md:pl-0 md:text-right">
+                        <span class="text-red-500 font-mono text-xs block mb-1">APRIL 2022 - CURRENT</span>
+                        <h3 class="text-lg font-bold text-white">Full Stack Software Engineer</h3>
+                        <p class="text-neutral-400 text-xs">NAFFCO FZCO | Dubai, UAE</p>
+                    </div>
+                    <div
+                        class="w-full md:w-[45%] pl-12 md:pl-0 mt-2 md:mt-0 text-xs text-gray-400 space-y-2 leading-relaxed">
+                        <p>• Engineered enterprise web systems and SaaS solutions with Angular 16, ASP.NET Core, C#, and
+                            SQL Server safely.</p>
+                        <p>• Deployed CRM, EMS, and Material Inspection modules incorporating digital signature
+                            workflows and automated validation logic.</p>
+                        <p>• Mapped localized AI features executing Ollama models along with secure cloud LLM processing
+                            protocols seamlessly.</p>
+                    </div>
+                </div>
+
+                <!-- Role 2: Minaar Group -->
+                <div class="relative flex flex-col md:flex-row items-start md:justify-between group">
+                    <div
+                        class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-neutral-700 -translate-x-1.5 border-4 border-[#090909] z-10 group-hover:bg-red-500 transition">
+                    </div>
+                    <div class="w-full md:w-[45%] pl-12 md:pl-0 md:text-right">
+                        <span class="text-neutral-500 font-mono text-xs block mb-1">FEB 2021 - APRIL 2022</span>
+                        <h3 class="text-lg font-bold text-white">Software Engineer</h3>
+                        <p class="text-neutral-400 text-xs">Minaar Group | Dubai, UAE</p>
+                    </div>
+                    <div
+                        class="w-full md:w-[45%] pl-12 md:pl-0 mt-2 md:mt-0 text-xs text-gray-400 space-y-2 leading-relaxed">
+                        <p>• Maintained core Laravel ERP modules focusing on HRMS, Billing, Purchase orders, and
+                            optimized MySQL reporting matrices.</p>
+                        <p>• Structured strict authentication and custom module permission levels using secure
+                            Role-Based Access Controls (RBAC).</p>
+                    </div>
+                </div>
+
+                <!-- Role 3: Velosit Info Lab IT -->
+                <div class="relative flex flex-col md:flex-row items-start md:justify-between group">
+                    <div
+                        class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-neutral-700 -translate-x-1.5 border-4 border-[#090909] z-10 group-hover:bg-red-500 transition">
+                    </div>
+                    <div class="w-full md:w-[45%] pl-12 md:pl-0 md:text-right">
+                        <span class="text-neutral-500 font-mono text-xs block mb-1">MARCH 2019 - JAN 2021</span>
+                        <h3 class="text-lg font-bold text-white">Software Engineer</h3>
+                        <p class="text-neutral-400 text-xs">Velosit Info Lab IT | Kerala, India</p>
+                    </div>
+                    <div
+                        class="w-full md:w-[45%] pl-12 md:pl-0 mt-2 md:mt-0 text-xs text-gray-400 space-y-2 leading-relaxed">
+                        <p>• Crafted distinct custom database logic maps, vehicle tracking systems, and secure medical
+                            laboratory results portals using PHP and WordPress frameworks.</p>
+                        <p>• Cooperated directly with active UI/UX design teams to translate custom wireframe prototypes
+                            into high-performance web solutions.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Details Section -->
+    <section id="education" class="py-24 relative z-10 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white text-center mb-16 uppercase tracking-wider tech-font">Education &
+                Details</h2>
+
+            <div
+                class="bg-neutral-950 p-8 rounded-xl border border-neutral-900 shadow-lg relative overflow-hidden group hover:border-red-500/30 transition-all duration-500">
+                <div
+                    class="absolute -right-10 -top-10 w-40 h-40 bg-red-500/5 rounded-full blur-3xl group-hover:bg-red-500/10 transition-colors">
+                </div>
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-8 relative z-10">
+                    <div
+                        class="w-16 h-16 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 text-2xl shrink-0 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-white mb-2 tech-font">Bachelor Of Computer Science and
+                            Engineering</h3>
+                        <p class="text-red-500 font-mono text-sm mb-4">University Of Kerala | June 2018 | Kerala, India
+                        </p>
+
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 pt-6 border-t border-neutral-800 text-sm">
+                            <div>
+                                <span
+                                    class="text-neutral-500 block text-xs uppercase tracking-wider mb-1 font-mono">Visa
+                                    Status</span>
+                                <span class="text-white font-medium">Sponsored residential visa</span>
+                            </div>
+                            <div>
+                                <span
+                                    class="text-neutral-500 block text-xs uppercase tracking-wider mb-1 font-mono">Notice
+                                    Period</span>
+                                <span class="text-white font-medium">30 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Terminal Structure -->
+    <footer
+        class="border-t border-neutral-900 bg-black py-12 relative z-10 text-center text-[11px] text-neutral-600 font-mono">
+        <div class="max-w-7xl mx-auto px-6 space-y-4">
+            <div class="flex justify-center flex-wrap gap-6 text-xs text-neutral-400 mb-2">
+                <a href="mailto:thansialkasim101@gmail.com" class="hover:text-red-500"><i
+                        class="fas fa-envelope mr-1"></i> thansialkasim101@gmail.com</a>
+                <a href="https://wa.me/971545736467" target="_blank"
+                    class="hover:text-red-500 inline-flex items-center"><svg class="w-3.5 h-3.5 mr-1.5 fill-current"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                    </svg> +971 545736467</a>
+                <a href="https://github.com/thansialkasim101" target="_blank" class="hover:text-red-500"><i
+                        class="fa-brands fa-github mr-1"></i> GitHub Repository</a>
+            </div>
+            <p>&copy; 2026 Thansi Al Kasim. Authorized Portfolio Core Terminal Node. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Slider Operations Control Logic Script -->
+    <script>
+        const slider = document.getElementById('projectSlider');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const sliderContainer = slider.parentElement;
+
+        let currentIndex = 0;
+        let autoPlayInterval;
+
+        function getCardsPerView() {
+            if (window.innerWidth >= 1024) return 3; // Desktop
+            if (window.innerWidth >= 640) return 2;  // Tablet
+            return 1;                                // Mobile
+        }
+
+        function updateSliderPosition() {
+            if (!slider.children[0]) return;
+            const cardWidth = slider.children[0].getBoundingClientRect().width;
+            const gap = 24; // 24px matches Tailwind's gap-6 layout spacing
+            slider.style.transform = `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+        }
+
+        function moveToNext() {
+            const totalCards = slider.children.length;
+            const cardsPerView = getCardsPerView();
+            if (currentIndex < totalCards - cardsPerView) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Return smoothly to first index element
+            }
+            updateSliderPosition();
+        }
+
+        function moveToPrev() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                const totalCards = slider.children.length;
+                currentIndex = totalCards - getCardsPerView(); // Skip to final index layer
+            }
+            updateSliderPosition();
+        }
+
+        nextBtn.addEventListener('click', moveToNext);
+        prevBtn.addEventListener('click', moveToPrev);
+
+        // Keep position accurate during interface resize changes
+        window.addEventListener('resize', () => {
+            currentIndex = 0;
+            updateSliderPosition();
+        });
+
+        // Auto-Play Feature Setup
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(moveToNext, 3000);
+        }
+
+        function stopAutoPlay() {
+            clearInterval(autoPlayInterval);
+        }
+
+        // Initialize Auto-Play
+        startAutoPlay();
+
+        // Pause on hover
+        sliderContainer.addEventListener('mouseenter', stopAutoPlay);
+        sliderContainer.addEventListener('mouseleave', startAutoPlay);
+
+        // Also pause when hovering over controls
+        nextBtn.parentElement.addEventListener('mouseenter', stopAutoPlay);
+        nextBtn.parentElement.addEventListener('mouseleave', startAutoPlay);
+    </script>
+
+    <!-- Floating Contact Widgets -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-center">
+        <!-- Email Button -->
+        <a href="mailto:thansialkasim101@gmail.com"
+            class="bg-[#ea4335] hover:bg-[#c5221f] text-white p-3 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+            aria-label="Send an Email">
+            <i class="fas fa-envelope text-lg w-6 h-6 flex items-center justify-center"></i>
+            <!-- Tooltip -->
+            <span
+                class="absolute right-full mr-4 bg-neutral-900 border border-neutral-700 text-white text-xs font-semibold px-3 py-1.5 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                Email Me
+            </span>
+        </a>
+
+        <!-- Call Button -->
+        <a href="tel:+971545736467"
+            class="bg-[#007bff] hover:bg-[#0056b3] text-white p-3 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+            aria-label="Call Me">
+            <i class="fas fa-phone-alt text-lg w-6 h-6 flex items-center justify-center"></i>
+            <!-- Tooltip -->
+            <span
+                class="absolute right-full mr-4 bg-neutral-900 border border-neutral-700 text-white text-xs font-semibold px-3 py-1.5 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                Call Me
+            </span>
+        </a>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/971545736467" target="_blank"
+            class="bg-[#25D366] hover:bg-[#128C7E] text-white p-4 rounded-full shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+            aria-label="Chat on WhatsApp">
+            <svg class="w-7 h-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+            </svg>
+            <!-- Tooltip -->
+            <span
+                class="absolute right-full mr-4 bg-neutral-900 border border-neutral-700 text-white text-xs font-semibold px-3 py-1.5 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                Chat with me
+            </span>
+        </a>
+    </div>
+</body>
+
+</html>
